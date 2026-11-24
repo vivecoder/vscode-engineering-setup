@@ -1,0 +1,352 @@
+{
+  // ==================================================
+  // 1. THEME AND WORKBENCH
+  // ==================================================
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sideBar.location": "left",
+  "breadcrumbs.enabled": true,
+  "window.commandCenter": true,
+  // ==================================================
+  // 2. EDITOR FONT AND APPEARANCE
+  // ==================================================
+  "editor.fontFamily": "'JetBrains Mono', Consolas, monospace",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 25,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  "editor.smoothScrolling": true,
+  "editor.padding.top": 12,
+  "editor.padding.bottom": 12,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "all",
+  "editor.lineNumbers": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.wordWrap": "off",
+  "editor.rulers": [
+    88,
+    120
+  ],
+  // ==================================================
+  // 3. BRACKETS AND INDENTATION
+  // ==================================================
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "indentRainbow.colors": [
+    "rgba(122, 162, 247, 0.07)",
+    "rgba(158, 206, 106, 0.07)",
+    "rgba(187, 154, 247, 0.07)",
+    "rgba(224, 175, 104, 0.07)"
+  ],
+  // ==================================================
+  // 4. CODING PRODUCTIVITY
+  // ==================================================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "editor.parameterHints.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.codeLens": true,
+  "editor.lightbulb.enabled": "onCode",
+  "editor.hover.enabled": "on",
+  "editor.folding": true,
+  "editor.foldingHighlight": true,
+  "editor.accessibilitySupport": "auto",
+  "editor.largeFileOptimizations": true,
+  // ==================================================
+  // 5. FILE MANAGEMENT
+  // ==================================================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1500,
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.venv/**": true,
+    "**/node_modules/**": true,
+    "**/__pycache__/**": true,
+    "**/.pytest_cache/**": true,
+    "**/.ruff_cache/**": true
+  },
+  "files.readonlyInclude": {
+    "**/fabric-snapshots/**": true
+  },
+  // ==================================================
+  // 6. SEARCH AND EXPLORER
+  // ==================================================
+  "search.showLineNumbers": true,
+  "search.exclude": {
+    "**/.venv": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.compactFolders": false,
+  "explorer.sortOrder": "type",
+  // ==================================================
+  // 7. TERMINAL CONFIGURATION
+  // ==================================================
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.shellIntegration.enabled": true,
+  // ==================================================
+  // 8. GIT AND VERSION CONTROL
+  // ==================================================
+  "git.enabled": true,
+  "git.autofetch": true,
+  "git.confirmSync": true,
+  "git.enableSmartCommit": false,
+  "git.suggestSmartCommit": false,
+  "git.allowForcePush": false,
+  "git.decorations.enabled": true,
+  "github.gitAuthentication": false,
+  "diffEditor.maxFileSize": 50,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "python.createEnvironment.trigger": "off",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.diagnosticSeverityOverrides": {},
+  "python.analysis.extraPaths": [],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  // ==================================================
+  // 10. BLACK FORMATTER AND RUFF
+  // ==================================================
+  "black-formatter.args": [
+    "--line-length",
+    "88"
+  ],
+  "ruff.enable": true,
+  "ruff.lint.enable": true,
+  // ==================================================
+  // 11. JUPYTER AND NOTEBOOKS
+  // ==================================================
+  "notebook.lineNumbers": "on",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 100,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "jupyter.jupyterLaunchTimeout": 600000,
+  "jupyter.askForKernelRestart": true,
+  // ==================================================
+  // 12. GITHUB COPILOT
+  // ==================================================
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": true,
+    "sql": true,
+    "json": true,
+    "yaml": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  // ==================================================
+  // 13. AI CHAT AND CLAUDE CODE
+  // ==================================================
+  "claudeCode.preferredLocation": "panel",
+  "chat.viewSessions.orientation": "stacked",
+  "chat.modeFilesLocations": {
+    ".github/chatmodes": true,
+    "c:\\Users\\dhira\\.vscode\\extensions\\synapsevscode.synapse-1.28.0\\copilot\\chatmodes": true
+  },
+  "chat.pluginLocations": {
+    "c:\\Users\\dhira\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-mssql.mssql\\agentSkills\\microsoft-sql-vscode": true,
+    "c:\\Users\\dhira\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-mssql.mssql\\agentSkills\\microsoft-sql-migration": true
+  },
+  // ==================================================
+  "synapse.localWorkFolderPath": "c:\\Users\\dhira\\Desktop\\flight-analytics-platform",
+  // 16. SQL SERVER
+  // ==================================================
+  "snowflake.connectionsConfigFile": "C:\\Users\\dhira\\.snowflake\\connections.toml",
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "ROOT"
+    }
+  ],
+  "mssql.connections": [
+    {
+      "authenticationType": "SqlLogin",
+      "connectTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "applicationIntent": "ReadWrite",
+      "server": "MISRA",
+      "database": "",
+      "user": "sa",
+      "password": "",
+      "commandTimeout": 30,
+      "encrypt": "Mandatory",
+      "groupId": "ROOT",
+      "profileName": "IndusLoanDB-Local",
+      "trustServerCertificate": true,
+      "savePassword": true,
+      "id": "0c363ad6-c1a4-4a2f-8d1d-24a236661e70"
+    }
+  ],
+  // ==================================================
+  // 17. JSON, YAML AND CONFIGURATION FILES
+  // ==================================================
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 4
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 4
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "yaml.validate": true,
+  "yaml.format.enable": true,
+  "yaml.hover": true,
+  "yaml.completion": true,
+  "yaml.disableSchemaDetection": [
+    "**/dbt_project.yml",
+    "**/dbt_project.yaml",
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+  // ==================================================
+  // 18. MARKDOWN AND DOCUMENTATION
+  // ==================================================
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "files.trimTrailingWhitespace": false
+  },
+  "markdown.preview.fontSize": 14,
+  "markdown.preview.lineHeight": 1.6,
+  // ==================================================
+  // 19. CODE SPELL CHECKER
+  // ==================================================
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.userWords": [
+    "ViveCoders",
+    "PySpark",
+    "Lakehouse",
+    "Databricks",
+    "LangChain",
+    "LangGraph",
+    "LlamaIndex",
+    "Qdrant",
+    "pgvector",
+    "Ragas",
+    "Langfuse",
+    "Ollama",
+    "FastAPI",
+    "Pydantic",
+    "PyTorch",
+    "OneLake",
+    "MLOps",
+    "LLMOps"
+  ],
+  // ==================================================
+  // 20. ERROR LENS
+  // ==================================================
+  "errorLens.enabled": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  "errorLens.fontStyleItalic": true,
+  // ==================================================
+  // 21. FILE ASSOCIATIONS
+  // ==================================================
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pyc": "default",
+    "*.bin": "default",
+    "*.zip": "default",
+    "*.gz": "default",
+    "*.pkl": "default",
+    "*.dbc": "default"
+  },
+  // ==================================================
+  // 22. SECURITY
+  // ==================================================
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.untrustedFiles": "prompt",
+  "security.workspace.trust.startupPrompt": "once",
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
+  "claudeCode.hideOnboarding": true
+}

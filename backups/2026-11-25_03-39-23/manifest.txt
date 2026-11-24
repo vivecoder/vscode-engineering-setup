@@ -1,0 +1,12 @@
+Backup date: Wed, Nov 25, 2026  3:39:38 AM
+Computer: MISRA
+
+Backed-up files:
+./claude/CLAUDE.md
+./codex/AGENTS.md
+./copilot/data-ai-engineering.instructions.md
+./vscode/extensions.txt
+./vscode/keybindings.json
+./vscode/projects.json
+./vscode/settings.json
+./vscode/snippets/engineering-snippets.code-snippets

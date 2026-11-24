@@ -1,0 +1,29 @@
+# Credentials and secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+**/credentials.json
+**/secrets.json
+**/auth.json
+**/tokens.json
+
+# Pre-restoration safety backups
+pre_restore/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/

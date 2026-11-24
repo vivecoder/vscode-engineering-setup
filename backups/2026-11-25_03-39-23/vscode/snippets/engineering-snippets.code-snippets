@@ -1,0 +1,234 @@
+{
+	"Python Main Function": {
+		"scope": "python",
+		"prefix": "pymain",
+		"body": [
+			"def main() -> None:",
+			"    ${1:pass}",
+			"",
+			"",
+			"if __name__ == \"__main__\":",
+			"    main()"
+		],
+		"description": "Python main function template"
+	},
+	"Python Logging": {
+		"scope": "python",
+		"prefix": "pylog",
+		"body": [
+			"import logging",
+			"",
+			"logging.basicConfig(",
+			"    level=logging.INFO,",
+			"    format=\"%(asctime)s | %(levelname)s | %(name)s | %(message)s\",",
+			")",
+			"",
+			"logger = logging.getLogger(__name__)",
+			"$0"
+		],
+		"description": "Standard Python logging configuration"
+	},
+	"Python Exception Handling": {
+		"scope": "python",
+		"prefix": "pytry",
+		"body": [
+			"try:",
+			"    ${1:pass}",
+			"except ${2:Exception} as exc:",
+			"    logger.exception(\"${3:Operation failed}\")",
+			"    raise",
+			"$0"
+		],
+		"description": "Exception handling with logging and re-raise"
+	},
+	"Python Function": {
+		"scope": "python",
+		"prefix": "pyfunc",
+		"body": [
+			"def ${1:function_name}(${2:parameters}) -> ${3:None}:",
+			"    \"\"\"${4:Describe the function purpose.}\"\"\"",
+			"    ${0:pass}"
+		],
+		"description": "Python function with type hints and docstring"
+	},
+	"Python Environment Variable": {
+		"scope": "python",
+		"prefix": "pyenv",
+		"body": [
+			"import os",
+			"",
+			"${1:config_value} = os.environ[\"${2:ENV_VARIABLE}\"]",
+			"$0"
+		],
+		"description": "Read a required environment variable"
+	},
+	"PySpark Read Data": {
+		"scope": "python",
+		"prefix": "sparkread",
+		"body": [
+			"df = (",
+			"    spark.read",
+			"    .format(\"${1:delta}\")",
+			"    .load(${2:source_path})",
+			")",
+			"$0"
+		],
+		"description": "Read data using PySpark"
+	},
+	"PySpark Write Data": {
+		"scope": "python",
+		"prefix": "sparkwrite",
+		"body": [
+			"(",
+			"    ${1:df}.write",
+			"    .format(\"${2:delta}\")",
+			"    .mode(\"${3:errorifexists}\")",
+			"    .save(${4:target_path})",
+			")",
+			"$0"
+		],
+		"description": "Write data using PySpark with safe default mode"
+	},
+	"PySpark Imports": {
+		"scope": "python",
+		"prefix": "sparkimports",
+		"body": [
+			"from pyspark.sql import DataFrame, SparkSession",
+			"from pyspark.sql import functions as F",
+			"from pyspark.sql import types as T",
+			"$0"
+		],
+		"description": "Common PySpark imports"
+	},
+	"SQL Common Table Expression": {
+		"scope": "sql",
+		"prefix": "sqlcte",
+		"body": [
+			"WITH ${1:cte_name} AS (",
+			"    SELECT",
+			"        ${2:column_name}",
+			"    FROM ${3:table_name}",
+			")",
+			"SELECT",
+			"    ${2:column_name}",
+			"FROM ${1:cte_name};",
+			"$0"
+		],
+		"description": "SQL common table expression"
+	},
+	"SQL Duplicate Validation": {
+		"scope": "sql",
+		"prefix": "sqldup",
+		"body": [
+			"SELECT",
+			"    ${1:key_column},",
+			"    COUNT(*) AS duplicate_count",
+			"FROM ${2:table_name}",
+			"GROUP BY ${1:key_column}",
+			"HAVING COUNT(*) > 1;",
+			"$0"
+		],
+		"description": "Identify duplicate records"
+	},
+	"SQL Null Validation": {
+		"scope": "sql",
+		"prefix": "sqlnull",
+		"body": [
+			"SELECT COUNT(*) AS null_count",
+			"FROM ${1:table_name}",
+			"WHERE ${2:column_name} IS NULL;",
+			"$0"
+		],
+		"description": "Validate null values"
+	},
+	"Markdown Task Documentation": {
+		"scope": "markdown",
+		"prefix": "mdtask",
+		"body": [
+			"# ${1:Task Title}",
+			"",
+			"## Objective",
+			"$2",
+			"",
+			"## Requirements",
+			"- $3",
+			"",
+			"## Implementation Plan",
+			"- [ ] $4",
+			"",
+			"## Testing and Validation",
+			"- [ ] $5",
+			"",
+			"## Risks and Dependencies",
+			"- $6",
+			"",
+			"## Next Steps",
+			"- $0"
+		],
+		"description": "Technical task documentation template"
+	},
+	"Markdown Architecture Documentation": {
+		"scope": "markdown",
+		"prefix": "mdarch",
+		"body": [
+			"# ${1:Solution Architecture}",
+			"",
+			"## Overview",
+			"$2",
+			"",
+			"## Requirements",
+			"- $3",
+			"",
+			"## Architecture",
+			"$4",
+			"",
+			"## Components and Data Flow",
+			"$5",
+			"",
+			"## Security",
+			"$6",
+			"",
+			"## Error Handling and Monitoring",
+			"$7",
+			"",
+			"## Deployment and Validation",
+			"$0"
+		],
+		"description": "Solution architecture documentation template"
+	},
+	"C++ Main Function": {
+		"scope": "cpp",
+		"prefix": "cppmain",
+		"body": [
+			"#include <iostream>",
+			"",
+			"int main() {",
+			"    $0",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ main function template"
+	},
+	"Java Main Function": {
+		"scope": "java",
+		"prefix": "javamain",
+		"body": [
+			"public class ${1:Main} {",
+			"    public static void main(String[] args) {",
+			"        $0",
+			"    }",
+			"}"
+		],
+		"description": "Java main function template"
+	},
+	"JavaScript Async Function": {
+		"scope": "javascript,typescript",
+		"prefix": "jsasync",
+		"body": [
+			"async function ${1:functionName}(${2:params}) {",
+			"    $0",
+			"}"
+		],
+		"description": "JavaScript or TypeScript async function"
+	}
+}
